@@ -1,5 +1,5 @@
 class RestaurantsController < ApplicationController
-  before_action :set_restaurant, only: [:show, :edit, :update, :destroy]
+  before_action :set_restaurant, only: [:show, :edit, :update, :destroy] #method that calls
 
   # GET /restaurants
   # GET /restaurants.json
@@ -10,6 +10,7 @@ class RestaurantsController < ApplicationController
   # GET /restaurants/1
   # GET /restaurants/1.json
   def show
+
   end
 
   # GET /restaurants/new
@@ -69,6 +70,6 @@ class RestaurantsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def restaurant_params
-      params.require(:restaurant).permit(:name, :address, :phone, :website)
+      params.require(:restaurant).permit(:name, :address, :phone, :website, :image)
     end
 end
