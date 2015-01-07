@@ -50,5 +50,6 @@ end
   gem 'spring'
   gem 'carrierwave'
   gem "fog"
+  gem "figaro"
 
 
