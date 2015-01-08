@@ -76,4 +76,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  #required for devise gem. Host should be actual host rather than localhost:3000
+  config.action_mailer.default_url_options = { host: 'https://foodyum.herokuapp.com/'}
 end
